@@ -1,0 +1,23 @@
+name: SimpleItemShop
+version: '${project.version}'
+main: pl.nodirection6130.itemshop.ShopPlugin
+api-version: '1.21'
+description: Simple item-for-item shop plugin
+authors: [nodirection6130]
+
+commands:
+  itemshop:
+    description: SimpleItemShop management command
+    usage: /itemshop <language|reload> [pl|en]
+    permission: itemshop.admin
+
+permissions:
+  itemshop.create:
+    description: Allows creating and destroying own shops
+    default: op
+  itemshop.use:
+    description: Allows using (buying from) shops
+    default: true
+  itemshop.admin:
+    description: Allows opening, breaking and building any shop chest + commands
+    default: op
